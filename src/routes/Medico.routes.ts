@@ -9,7 +9,7 @@ class MedicoRouter{
 
     constructor(){
         this.router=Router()
-        this.medicoController= new MedicoController
+        this.medicoController= new MedicoController()
         this.routes()
     }
 
@@ -24,4 +24,4 @@ class MedicoRouter{
     }
 
 }
-export default MedicoRouter
+export default new MedicoRouter().router
