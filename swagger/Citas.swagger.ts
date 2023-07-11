@@ -3,8 +3,8 @@ export default {
      * 
      * @swagger
      * 
-     * /crear_paciente:
-     *  post:
+     * /citas:
+    *  get:
      *      summary: Obtener un mensaje de prueba
      *      responses:
      *          200:
@@ -12,7 +12,8 @@ export default {
      *              type: string
      *              content:
      *              text/plain:
-     *              example: "Bienvenidos a Pacientes"
+     *              example: "Bienvenidos a Medicos"
+     *     
      * 
      */
-    }
+}

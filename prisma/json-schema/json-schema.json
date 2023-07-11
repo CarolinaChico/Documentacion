@@ -99,7 +99,7 @@
         "idCita": {
           "type": "integer"
         },
-        "decha": {
+        "fecha": {
           "type": "string",
           "format": "date-time"
         },

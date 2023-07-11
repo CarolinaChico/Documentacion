@@ -6,6 +6,7 @@ import PacienteRouter from './routes/Paciente.routes'
 import MedicoRouter from './routes/Medico.routes'
 import FormularioRoutes from './routes/Formulario.routes'
 import cors from 'cors'
+import CitaRoutes from './routes/Cita.routes'
 
 
 /**
@@ -43,6 +44,7 @@ class App{
 	this.app.use('/', PacienteRouter)
 	this.app.use('/', MedicoRouter)
 	this.app.use('/', FormularioRoutes)
+	this.app.use('/', CitaRoutes)
 	this.app.get(
 		'/',
 		(req:Request, res:Response)=>{

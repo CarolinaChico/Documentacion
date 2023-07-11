@@ -45,7 +45,7 @@ model Medico {
 
 model Cita {
   idCita                   Int       @id
-  decha                    DateTime
+  fecha                    DateTime
   Paciente                 Paciente? @relation(fields: [pacienteCedula], references: [cedula])
   pacienteCedula           Int?
   Medico                   Medico?   @relation(fields: [medicoTarjetaProfesional], references: [tarjetaProfesional])
