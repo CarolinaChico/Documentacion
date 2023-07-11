@@ -3,7 +3,7 @@ export default {
      * 
      * @swagger
      * 
-     * /paciente:
+     * /crear_paciente:
      *  post:
      *      summary: Obtener un mensaje de prueba
      *      responses:

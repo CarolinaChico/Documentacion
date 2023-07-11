@@ -4,7 +4,7 @@
   "description": "Sandbox para la documentacion",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "dev": "nodemon src/index.ts",
     "jsonschema": "prisma generate --generator=jsonSchema"
   },
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^4.16.2",
+    "@types/jsonwebtoken": "^9.0.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "swagger-jsdoc": "^6.2.8",

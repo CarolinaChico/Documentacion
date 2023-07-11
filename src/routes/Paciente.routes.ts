@@ -1,3 +1,4 @@
+
 import { Router, Response, Request } from "express"
 import PacienteController from "../controller/PacienteController"
 
@@ -21,13 +22,18 @@ class PacienteRouter{
                     }
 
                 )
-        
+
+                        
                 this.router.post(
                     '/crear_paciente',
                     (req:Request, res:Response)=>{
                     this.pacienteController.crearPaciente(req,res)
                     }
                 )
+
+               /* this.router.post(
+                    '/crear_paciente', 
+                    this.pacienteController.crearPaciente.bind(this.pacienteController));*/
             }
             }
 

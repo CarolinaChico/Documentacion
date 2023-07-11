@@ -1,7 +1,7 @@
 //1. Importar las biblotecas
 
 import request from 'supertest'//permite hacer peticiones
-import App from './App'// lo que yo quiero probar, importar la calse APP de la carpeta en donde esta el archivo Router
+import App from '../App'// lo que yo quiero probar, importar la calse APP de la carpeta en donde esta el archivo Router
 // las reglas de prueba
 describe( // crear una agrupacion de reglas que me describan, modulos de prueba 
 	'GET /', // se va ahacer get de la ruta principal /

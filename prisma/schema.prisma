@@ -13,6 +13,14 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+model Usuario {
+  idUsuario Int @id @default(autoincrement())
+  usuario String  @unique
+  contrasena String
+  nombre String
+  apellido String
+  fechaNacimiento String
+}
 
 model Paciente {
   cedula          Int      @id

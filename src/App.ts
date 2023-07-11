@@ -43,7 +43,12 @@ class App{
 	this.app.use('/', PacienteRouter)
 	this.app.use('/', MedicoRouter)
 	this.app.use('/', FormularioRoutes)
-
+	this.app.get(
+		'/',
+		(req:Request, res:Response)=>{
+			res.send('Bienvenidos a la IPS AteneaIPS')
+		}
+	)
 	
 	}
   
